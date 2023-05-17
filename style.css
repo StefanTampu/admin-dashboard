@@ -9,7 +9,6 @@ html{
 }
 
 body {
-    height: 100%;
     width: 100%;
 }
 
@@ -102,6 +101,17 @@ header{
 
 main{
     background-color: silver;
+    display: grid;
+    grid-template: 1fr 2rem repeat(2, 2fr) 2rem repeat(2, 2fr) / repeat(3, 2fr) 1fr;
+}
 
+main div {
+    border: 1px dotted black;
+}
+
+
+.add-container{
+    grid-column: span 2 / -1;
+    text-align: end;
 }
 
