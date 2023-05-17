@@ -17,7 +17,7 @@ body {
     height: 100vh;
     width: 100%;
     display: grid;
-    grid-template: 1fr 5fr / 1fr 5fr;
+    grid-template: 1fr 7fr / 1fr 5fr;
 }
 
 /*Sidebar section*/
@@ -25,9 +25,10 @@ body {
 #sidebar{
     grid-row: 1 / -1;
     display: grid;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 7fr;
     align-items: center;
     color: white;
+    cursor:default;
     background: linear-gradient(black, 90%, silver, white);
 }
 
@@ -53,10 +54,54 @@ body {
 #sidebar li:hover{
     color: black;
     background-color: hsl(0, 0%, 100%);
-    cursor:default;
     font-size: 1.75rem;
 }
 
-main{
-    background-color: yellowgreen;
+/*Header Section*/
+
+header{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 10fr 1fr 2fr;
+    align-items: center;
 }
+
+.notification{
+    grid-column: span 1 / -2;
+}
+
+#notification-bell{
+    width: 2rem;
+}
+
+.account-tab{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.at-icon {
+    width: 4rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 2rem;
+    border: 5px double black;
+    background-image: url(Resources/icon);
+    background-size: contain;
+}
+
+.at-name {
+    font-size: 1.5rem;
+}
+
+#at-triangle{
+    width: 1rem;
+}
+
+/*Main Section*/
+
+main{
+    background-color: silver;
+
+}
+
