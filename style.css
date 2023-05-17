@@ -27,25 +27,34 @@ body {
     display: grid;
     grid-template-rows: 1fr 5fr;
     align-items: center;
-    justify-content: center;
     color: white;
     background: linear-gradient(black, 90%, silver, white);
+}
+
+#sidebar h1{
+    padding-left: 5rem;
 }
 
 #sidebar ul{
     list-style-type: none;
     align-self: baseline;
     margin-top: 3rem;
-    width: 100%;
     font-size: 1.5rem;
     display: grid;
     gap: 1rem;
 }
 
 #sidebar li{
-    width: 100%;
     padding: 0.5rem;
-    border: 2px solid white;
+    padding-left: 5rem;
+    transition: 0.5s;
+}
+
+#sidebar li:hover{
+    color: black;
+    background-color: hsl(0, 0%, 100%);
+    cursor:default;
+    font-size: 1.75rem;
 }
 
 main{
